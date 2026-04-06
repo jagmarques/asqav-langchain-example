@@ -1,0 +1,6 @@
+asqav[langchain]
+langchain
+langchain-openai
+langchain-community
+wikipedia
+python-dotenv
