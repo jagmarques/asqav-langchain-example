@@ -32,7 +32,7 @@ Every event is hash-chained to the previous one. If anyone tampers with the logs
 ## How it works
 
 ```python
-from asqav.integrations.langchain import AsqavCallbackHandler
+from asqav.extras.langchain import AsqavCallbackHandler
 
 # This is the only line you add to your existing agent
 handler = AsqavCallbackHandler()

@@ -11,7 +11,7 @@ from langchain.agents import AgentExecutor, create_react_agent
 from langchain_community.tools import WikipediaQueryRun
 from langchain_community.utilities import WikipediaAPIWrapper
 from langchain_core.prompts import PromptTemplate
-from asqav.integrations.langchain import AsqavCallbackHandler
+from asqav.extras.langchain import AsqavCallbackHandler
 
 load_dotenv()
 
@@ -45,7 +45,3 @@ print("
 --- Result ---")
 print(result["output"])
 
-# Print audit summary
-print("
---- Audit Trail ---")
-handler.print_summary()
