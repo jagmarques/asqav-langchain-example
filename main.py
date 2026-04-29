@@ -15,6 +15,8 @@ from asqav.extras.langchain import AsqavCallbackHandler
 
 load_dotenv()
 
+# When pointing at *.asqav.com, the SDK hashes context locally before sending.
+# For self-hosted deployments, raw context is sent for richer audit. See docs/canonicalization.md.
 # Initialize the asqav callback handler - this is the only addition
 handler = AsqavCallbackHandler()
 

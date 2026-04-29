@@ -6,6 +6,23 @@
 
 Add tamper-evident audit trails to any LangChain agent in 3 lines of code.
 
+## Data handling
+
+This example uses the `asqav` Python SDK. By default, the SDK auto-detects the deployment:
+
+- **Asqav cloud (`*.asqav.com`):** the SDK hashes your action context locally and sends only the hash plus a small metadata bag (action_type, agent_id, session_id, model_name, tool_name). Raw prompts and tool arguments never leave your infrastructure.
+- **Self-hosted:** the SDK sends the full context so the server can run policy checks, PII redaction, and richer audit views.
+
+Override per call:
+
+```python
+import asqav
+
+asqav.init(api_key="sk_...", base_url="https://api.asqav.com", mode="hash-only")
+```
+
+This is GDPR-aware data minimization by default for cloud deployments. See `docs/canonicalization.md` in the SDK repo for the canonicalization spec and conformance vectors.
+
 ## What this does
 
 Wraps a LangChain ReAct agent with `AsqavCallbackHandler`. Every LLM call, tool use, and chain execution gets logged to an immutable, hash-chained audit trail - no code changes to your agent logic.
