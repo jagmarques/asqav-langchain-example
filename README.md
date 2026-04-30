@@ -4,7 +4,7 @@
 
 # asqav + LangChain Example
 
-Add tamper-evident audit trails to any LangChain agent in 3 lines of code.
+Add verifiable audit trails to any LangChain agent in 3 lines of code.
 
 ## Data handling
 
@@ -25,7 +25,7 @@ This is GDPR-aware data minimization by default for cloud deployments. See [docs
 
 ## What this does
 
-Wraps a LangChain ReAct agent with `AsqavCallbackHandler`. Every LLM call, tool use, and chain execution gets logged to an immutable, hash-chained audit trail - no code changes to your agent logic.
+Wraps a LangChain ReAct agent with `AsqavCallbackHandler`. Every LLM call, tool use, and chain execution gets logged to an immutable, linked audit trail - no code changes to your agent logic.
 
 ## Quick start
 
@@ -48,7 +48,7 @@ After running, you will see normal LangChain agent output plus:
 [asqav] Audit trail: 3 events, chain integrity: valid
 ```
 
-Every event is hash-chained to the previous one. If anyone tampers with the logs, the chain breaks and you know exactly where.
+Every event is linked to the previous one. If anyone tampers with the logs, the chain breaks and you know exactly where.
 
 ## How it works
 
