@@ -2,7 +2,7 @@
   <a href="https://asqav.com"><img src="https://asqav.com/logo-text-white.png" alt="asqav" width="150"></a>
 </p>
 
-# asqav + LangChain Example
+# Asqav + LangChain Example
 
 Add verifiable audit trails to any LangChain agent in 3 lines of code.
 
