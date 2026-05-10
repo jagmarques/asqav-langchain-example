@@ -39,7 +39,6 @@ result = executor.invoke(
     config={"callbacks": [handler]},
 )
 
-print("
---- Result ---")
+print("\n--- Result ---")
 print(result["output"])
 
