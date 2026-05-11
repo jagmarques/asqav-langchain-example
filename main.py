@@ -4,7 +4,6 @@ asqav + LangChain - Tamper-evident audit trails for LangChain agents.
 Run: python main.py
 """
 
-import os
 from dotenv import load_dotenv
 from langchain_openai import ChatOpenAI
 from langchain.agents import AgentExecutor, create_react_agent
