@@ -68,4 +68,4 @@ That is it. Your agent works exactly the same, but now you have a complete audit
 
 - Python 3.10+
 - OpenAI API key (for the LangChain agent)
-- asqav API key (free tier available at [asqav.com](https://asqav.com))
+- Asqav API key (free tier available at [asqav.com](https://asqav.com))

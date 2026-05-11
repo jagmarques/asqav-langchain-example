@@ -1,5 +1,5 @@
 """
-asqav + LangChain - Tamper-evident audit trails for LangChain agents.
+Asqav + LangChain - Tamper-evident audit trails for LangChain agents.
 
 Run: python main.py
 """
